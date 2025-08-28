@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>عبدالاله عثمان غويث - الموقع الشخصي</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="language-switch">
+            <button onclick="changeLanguage('ar')">العربية</button>
+            <button onclick="changeLanguage('en')">English</button>
+        </div>
+        <h1 id="name">مرحبًا، أنا عبدالاله عثمان غويث</h1>
+        <nav>
+            <ul>
+                <li><a href="#home" id="home-link">الصفحة الرئيسية</a></li>
+                <li><a href="#about" id="about-link">عني</a></li>
+                <li><a href="#blog" id="blog-link">المدونة</a></li>
+                <li><a href="#contact" id="contact-link">اتصل بي</a></li>
+            </ul>
+        </nav>
+        <div class="search-container">
+            <input type="text" id="search-input" placeholder="ابحث في الموقع...">
+            <button onclick="performSearch()" id="search-btn">بحث</button>
+        </div>
+    </header>
+
+    <main>
+        <section id="home">
+            <h2 id="welcome-message">مرحبًا بك في موقعي الشخصي</h2>
+            <!-- استخدام رابط الصورة مباشرة -->
+            <img src="https://mistralaichatupprodswe.blob.core.windows.net/chat-images/af/9f/ee/af9fee42-89a1-4c68-a8e9-7236f15d3667/11db3f6f-d422-4933-82ba-bbc66980fc90/21a75804-081b-4cbc-bdad-24773b086806?sv=2025-01-05&st=2025-08-28T19%3A23%3A11Z&se=2025-08-28T20%3A23%3A11Z&sr=b&sp=rade&sig=TpoRxPv54NCQzqAC5bwjg4XsgembEti4WyfYZwzJOrQ%3D"
+                 alt="عبدالاله عثمان غويث" class="profile-image">
+            <p id="intro-text">أنا عبدالاله عثمان غويث، ومطور مواقع إلكترونية.</p>
+        </section>
+
+        <section id="about">
+            <h2 id="about-heading">عني</h2>
+            <p id="about-text">أنا متخصص في تطوير المواقع الإلكترونية والتطبيقات. لدي خبرة في استخدام تقنيات مثل HTML، CSS، JavaScript، وReact. أسعى دائماً لتقديم حلول تقنية مبتكرة وعملية تلبي احتياجات العملاء وتحقق أهدافهم الرقمية.</p>
+            <div class="skills">
+                <h3>مهاراتي التقنية:</h3>
+                <ul>
+                    <li>تطوير المواقع الإلكترونية (HTML, CSS, JavaScript)</li>
+                    <li>React.js و Vue.js</li>
+                    <li>تطوير التطبيقات المتجاوبة</li>
+                    <li>تحسين محركات البحث (SEO)</li>
+                    <li>إدارة قواعد البيانات</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="blog">
+            <h2 id="blog-heading">المدونة</h2>
+            <p>أشارك هنا أفكاري ومقالاتي حول تطوير المواقع والتقنيات الحديثة</p>
+            <div class="blog-posts">
+                <article class="blog-post">
+                    <h3>أفضل الممارسات في تطوير المواقع الإلكترونية</h3>
+                    <p class="post-date">28 أغسطس 2025</p>
+                    <p>في هذا المقال، سأشارك معكم أهم النصائح والممارسات التي تساعد في إنشاء مواقع إلكترونية احترافية وفعالة...</p>
+                    <a href="#" class="read-more">اقرأ المزيد</a>
+                </article>
+                <article class="blog-post">
+                    <h3>مستقبل تطوير الويب: اتجاهات 2025</h3>
+                    <p class="post-date">25 أغسطس 2025</p>
+                    <p>نستكشف في هذا المقال أحدث الاتجاهات في عالم تطوير الويب والتقنيات الناشئة التي ستشكل مستقبل الإنترنت...</p>
+                    <a href="#" class="read-more">اقرأ المزيد</a>
+                </article>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2 id="contact-heading">اتصل بي</h2>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <h3>البريد الإلكتروني:</h3>
+                    <p id="contact-email">fcab8090@gmail.com</p>
+                </div>
+                <div class="contact-item">
+                    <h3>رقم الهاتف:</h3>
+                    <p id="contact-phone">+966 50 123 4567</p>
+                </div>
+                <div class="contact-item">
+                    <h3>وسائل التواصل الاجتماعي:</h3>
+                    <div class="social-links">
+                        <a href="#" class="social-link">LinkedIn</a>
+                        <a href="#" class="social-link">GitHub</a>
+                        <a href="#" class="social-link">Twitter</a>
+                    </div>
+                </div>
+            </div>
+            <div class="contact-form">
+                <h3>أرسل لي رسالة:</h3>
+                <form>
+                    <input type="text" placeholder="الاسم" required>
+                    <input type="email" placeholder="البريد الإلكتروني" required>
+                    <textarea placeholder="الرسالة" rows="5" required></textarea>
+                    <button type="submit">إرسال</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 <span id="footer-name">عبدالاله عثمان غويث</span></p>
+        <p class="manus-branding">Made by <strong>Manus</strong></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
